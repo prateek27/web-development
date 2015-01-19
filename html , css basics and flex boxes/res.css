@@ -1,7 +1,9 @@
+html{
+	background: #000;
+}
 body{
-	margin: 40px;
+	margin: 80px;
 	margin-top: 0px;
-
 	background-image: url("images/body-bg.png");
 }
 .flex_container{
@@ -10,6 +12,21 @@ body{
 	flex-direction:row;
 	justify-content:space-between;
 	flex-wrap:wrap;
+}
+
+figcaption{
+	text-align:center;
+}
+
+#about_container{
+	flex-wrap:nowrap;
+}
+#about_text_images_container{
+	flex-direction : column;
+	flex-shrink:8;
+}
+#image_list_div{
+	justify-content:space-around;
 }
 a{
 	text-decoration: none;
@@ -34,6 +51,11 @@ nav ul li{
 	margin-right:10px; 
 }
 
+p{
+	text-align: justify;
+	margin-right: 20px;
+}
+
 #hidden_dialog{
 	display: none;
 }
@@ -41,6 +63,14 @@ nav ul li{
 	position: absolute;
 	align:top-right;
 }
+#articles_div{
+	flex-wrap:nowrap;
+
+}
 #about:target #hidden_dialog{
 	display: block;
 };
+
+#about_images_container{
+	flex-shrink:8;
+}
