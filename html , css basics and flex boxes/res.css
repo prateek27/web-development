@@ -1,5 +1,5 @@
 html{
-	background: #000;
+	background: #696868;
 }
 body{
 	margin: 80px;
@@ -17,7 +17,24 @@ body{
 figcaption{
 	text-align:center;
 }
+#header_container{
+	
+	position: fixed;
+	margin-top: 0px;
+}
 
+#header_container img{
+	float: left;
+}
+#header_container nav{
+	float:right;
+}
+#empty_div{
+	clear:both;
+}
+#about{
+	margin-top: 0px;
+}
 #about_container{
 	flex-wrap:nowrap;
 }
@@ -34,6 +51,7 @@ a{
 }
 
 body > header{
+	position: fixed;
 	background-color: black;
 	margin: 0px;
 	}
