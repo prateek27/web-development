@@ -1,10 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 html{
-	background: #696868;
-}
+	background: url("images/body-bg.png");
+	}
 body{
-	margin: 80px;
+	margin: 5%;
 	margin-top: 0px;
-	background-image: url("images/body-bg.png");
+	padding:0px;
+	background-color:rgba(34, 24, 24, 0.38);
+
+}
+body *{
+	margin-left: 20px;
+}
+body first-child{
+	margin-left:0px;
 }
 .flex_container{
 	display: flex;
@@ -17,10 +26,40 @@ body{
 figcaption{
 	text-align:center;
 }
+header,h1{
+font-family: 'Roboto Condensed', sans-serif;
+font-size:3rem;
+color:rgb(187, 179, 179);
+}
+h1{
+margin-top:0px;
+}
+h1::after{
+display:block;
+margin-right:20px;
+content:"."; 
+background-image:url("images/icon-mail.png");
+background-repeat:repeat-x;
+}
+#first_heading{
+margin-top:100px;
+}
+body >header{
+font-size:1rem;
+}
 #header_container{
 	
 	position: fixed;
 	margin-top: 0px;
+	width:90%;
+}
+#gallery_container{
+	justify-content:space-around;
+}
+#gallery_container img
+{
+	border:2px solid white;
+	margin:5px;
 }
 
 #header_container img{
@@ -52,6 +91,7 @@ a{
 
 body > header{
 	position: fixed;
+	display:block;
 	background-color: black;
 	margin: 0px;
 	}
@@ -72,6 +112,8 @@ nav ul li{
 p{
 	text-align: justify;
 	margin-right: 20px;
+	font-family:Sans-Serif;
+	color:azure;
 }
 
 #hidden_dialog{
@@ -83,11 +125,11 @@ p{
 }
 #articles_div{
 	flex-wrap:nowrap;
-
 }
 #about:target #hidden_dialog{
 	display: block;
 };
+
 
 #about_images_container{
 	flex-shrink:8;
