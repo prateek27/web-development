@@ -1,12 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 html{
-	background: url("images/body-bg.png");
+	background: url("images/bg.jpg");
 	}
 body{
 	margin: 5%;
 	margin-top: 0px;
 	padding:0px;
-	background-color:rgba(34, 24, 24, 0.38);
+	background-color:rgba(13, 10, 10, 0.75);
 
 }
 body *{
@@ -15,6 +14,7 @@ body *{
 body first-child{
 	margin-left:0px;
 }
+
 .flex_container{
 	display: flex;
 	padding: 10px;
@@ -25,24 +25,37 @@ body first-child{
 
 figcaption{
 	text-align:center;
+	font-family:sans-serif;
+	color:oldlace;
+	}
+figure img{
+border: 3px solid rgb(244, 244, 244);
+box-shadow: 2px 2px 2px 2px rgb(45, 38, 38);
 }
 header,h1{
-font-family: 'Roboto Condensed', sans-serif;
+font-family:  sans-serif;
 font-size:3rem;
 color:rgb(187, 179, 179);
 }
 h1{
 margin-top:0px;
 }
+h1::before{
+display:block;
+margin-right:20px;
+content:url("images/body-bg.png"); 
+background-image:url("images/divider.png");
+background-repeat:repeat-x;
+}
 h1::after{
 display:block;
 margin-right:20px;
-content:"."; 
-background-image:url("images/icon-mail.png");
+content:url("images/body-bg.png"); 
+background-image:url("images/divider.png");
 background-repeat:repeat-x;
 }
 #first_heading{
-margin-top:100px;
+margin-top: 80px;
 }
 body >header{
 font-size:1rem;
@@ -50,11 +63,11 @@ font-size:1rem;
 #header_container{
 	
 	position: fixed;
-	margin-top: 0px;
+	margin-top: -80px;
 	width:90%;
 }
 #gallery_container{
-	justify-content:space-around;
+	justify-content:center;
 }
 #gallery_container img
 {
@@ -99,6 +112,10 @@ body > header{
 
 body >header>img {
 	margin: 10px;
+}
+h3{
+font-family:sans-serif;
+color:oldlace;
 }
 
 nav ul{
