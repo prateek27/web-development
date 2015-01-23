@@ -143,6 +143,14 @@ p{
 #articles_div{
 	flex-wrap:nowrap;
 }
+#profile_pic_big{
+display:none;
+position:absolute;
+width:500px;
+height:500px;
+}
+
+
 #about:target #hidden_dialog{
 	display: block;
 };
