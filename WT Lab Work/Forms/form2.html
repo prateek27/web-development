@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>DTU Registration Page</title>
+		<link rel="stylesheet" href="aero_style.css">
+	</head>
+	<body>
+		<form action="" method="post" class="elegant-aero">
+			<h1>DTU Registration Form
+				<span>Please fill all the fields.</span>
+			</h1>
+			<label>
+				<span>Your Name :</span>
+				<input id="name" type="text" name="name" placeholder="Your full name "/>
+			</label>
+			
+			<label>
+				<span>Your Email :</span>
+				<input id="email" type="email" name="email" placeholder="Valid email address"/>
+			</label>
+			
+			<label>
+				<span>Enter DOB :</span>
+				<input id="date" type ="date" name="date" placeholder="Enter date of Birth"/> 
+				
+			</label>
+			<label>
+				<span>Query   :
+				<textarea id="message" name="message" placeholder="Your query to be answered."></textarea>
+				 </span>
+			</label>
+			<label>
+				<span>Branch   :  </span> <select name="select_branch">
+					<option value="cs">Computer Engg</option>
+					<option value="me">Mechanical Engg </option>
+					<option value="ee">Electronics Engg </option>
+				</select>
+			</label>
+			<label>
+				<span>&nbsp;</span>
+				<input type="button" class="button"	value="Send"/>
+			</label>
+	</body>
+</html>
