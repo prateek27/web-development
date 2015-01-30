@@ -86,7 +86,7 @@ position:relative;
 margin-top:100px;
 }
 
-
+/*
 #hexagon:after{
 width:0px;
 height: 0px;
@@ -97,7 +97,7 @@ border-right:50px solid transparent;
 position: absolute;
 margin-top:100px; 
 
-}
+};*/
 #hexagon:before{
 width:0px;
 height: 0px;
