@@ -1,0 +1,39 @@
+body{
+	padding: 1%;
+	font-size:10px;
+}
+
+.show_mobile{
+	display: none;
+}
+
+#navigation_bar{
+	background-color: aliceblue;
+	width: 100%;
+	font-size:2rem;
+	display: block;
+}
+#navigation_bar ul{
+	display: flex;
+	list-style: none;
+	flex-direction:row;
+}
+#navigation_bar ul li{
+	margin-right: 2rem;
+}
+
+@media screen and (max-width:600px){
+	
+	.show_mobile{
+		display: block;
+	}
+
+	#navigation_bar ul{
+		display: none;
+	}
+	#nav_ul:target{
+		display: block;
+		flex-direction:column;
+		font-size:1rem;
+	}
+}

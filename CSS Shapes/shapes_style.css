@@ -1,0 +1,155 @@
+body{
+	background: white;
+}
+div{
+	margin:10px;
+	display: inline-block;
+
+}
+
+#square{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+#circle{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: blue;
+}
+#triangle_up{
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right:50px solid transparent;
+	border-bottom: 100px solid green;
+}
+#triangle_right{
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-bottom:50px solid transparent;
+	border-left: 100px solid orange;
+}
+#right_angled_triangle{
+	width: 0px;
+	height: 0px;
+	border-top:100px solid red;
+	border-right: 100px solid transparent;
+}
+
+#oval{
+	height: 100px;
+	width: 200px;
+	background-color: gray;
+	border-radius: 100px/50px;
+}
+
+#parallelogram{
+	width: 100px;
+	height: 100px;
+	background-color:orange;
+	margin-right: 50px;
+	-webkit-transform:skew(-30deg);
+}
+
+#star{
+	/*Make a simple Triangle */
+width: 0px;
+height: 0px;
+border-bottom: 100px solid greenyellow;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+position: relative;
+}
+#star:after{
+	/* Make an inverted triangle and position it relative to the above */
+width: 0px;
+height: 0px;
+border-top:100px solid greenyellow;
+border-left:50px solid transparent;
+border-right: 50px solid transparent;
+position:absolute;
+content:"";
+margin-top: 30px;
+margin-left: -50px;
+}
+
+#hexagon{
+width: 100px;
+height: 100px;
+background-color:orange;
+position:relative;
+margin-top:100px;
+}
+
+/*
+#hexagon:after{
+width:0px;
+height: 0px;
+content: "";
+border-top: 40px solid orange;
+border-left: 50px solid transparent;
+border-right:50px solid transparent;
+position: absolute;
+margin-top:100px; 
+
+};*/
+#hexagon:before{
+width:0px;
+height: 0px;
+margin-top: -40px;
+border-bottom: 40px solid orange;
+border-left: 50px solid transparent;
+border-right:50px solid transparent;
+position:absolute;
+content:"";
+};
+#heart{
+	height: 100px;
+	width: 90px;
+	position: relative;
+	background-color: red;
+}
+#pacman{
+	width: 0px;
+	height: 0px;
+	position:relative;
+	border:60px solid red;
+	border-right:60px solid transparent;
+	border-radius: 60px;
+}
+#cone{
+	width: 0px;
+	height: 0px;
+	margin-top:20px;
+	position: relative;
+	border:60px solid transparent;
+	border-top:80px solid lightgreen;
+	border-radius:60px;
+}
+#moon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0px 0px silver;
+}
+#chatbubble{
+	width: 150px;
+	height: 100px;
+	border-radius: 20px;
+	background: orange;
+
+}
+#chatbubble:after{
+	width: 0px;
+	height: 0px;
+	content: "";
+	border:20px solid transparent;
+	border-top:25px solid orange;
+	margin-top:100px;
+	margin-left:80px;
+	position: absolute;
+};
