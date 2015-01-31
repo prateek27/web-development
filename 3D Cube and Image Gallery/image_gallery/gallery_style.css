@@ -2,7 +2,7 @@
 	perspective:1000px;
 }
 .cube{
-	margin:250px auto;
+	margin:150px auto;
 	width: 300px;
 	height: 300px;
 	position: relative;
@@ -62,10 +62,10 @@ img{
 
 @-webkit-keyframes spin4sides{
 	from{
-		-webkit-transform:rotateX(0deg) rotateY(0deg);
+		-webkit-transform:rotateX(-30deg) rotateY(0deg);
 	}
 	to{
-		-webkit-transform:rotateX(0deg) rotateY(360deg);
+		-webkit-transform:rotateX(-30deg) rotateY(360deg);
 	}
 
 }
