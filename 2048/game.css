@@ -1,0 +1,16 @@
+#game_div{
+	margin:75px auto;
+	width: 460px;
+	height: 460px;
+	background-color:blue;	
+	padding: 10px;
+}
+.tile{
+	height: 90px;
+	width: 90px;
+	display: inline-block;
+	margin:10px;
+	background-color: lightgreen;
+	border-radius: 5px;
+	box-shadow: 0px 3px 1px white;
+}

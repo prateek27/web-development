@@ -1,0 +1,3 @@
+Calc : JS file i typed
+Calc_Simple : Simple functionality doesnt fix errors such two consecutive symbols,or decimals
+abc : The original file
