@@ -1,0 +1,43 @@
+window.location = "http://google.com"
+Javascript WebAPI
+
+	//Class -> function XMLHttpRequest(){ [native code]}
+
+	var req = new XMLHttpRequest();
+	req.open("GET","graph.facebook.com/user_id",true);
+	req.responseType= "text"
+	req.send();
+
+	//true -> ASYNCHRONOUS REQUEST , false - SYNCHRONOUSE REQUEST
+
+	req.response
+
+
+
+function fetchData(){
+	var req = new XMLHttpRequest();
+	req.open("GET","http://graph.facebook.com/user_id",true);
+	req.responseType ="json";
+	req.send();
+	
+
+	req.addEventListener('load',function(){
+		console.log(this.respone);
+	});
+
+	req.addEventListener('error',function(){
+		console.log(this);
+		});
+
+	console.log(req.response);  //Will Give NULL , Async wont wait for server reply.
+	console.log("Prateek");
+}
+
+
+//Other Properties of REQUEST Object.
+	Request State Codes - req.readyState
+	0) unsent
+	1) opened
+	2) headers_received
+	3) loading
+	4) done

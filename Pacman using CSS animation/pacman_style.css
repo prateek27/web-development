@@ -1,7 +1,9 @@
 body{
 	background: black;
 	overflow: hidden;
+
 }
+
 #balls{
 	
 	height: 70px;
