@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Patient Details</title>
+		<link rel="stylesheet" href = "doctor.css"/>  
+		<link rel="stylesheet" href = "doctor_form.css"/>  
+		<link rel="stylesheet" href = "timeline.css"/>  
+	</head>
+	<body>
+		<header>
+		This is header.
+		</header>
+
+		<section id="basic_details" class="flex_container">
+			
+			<div id="basic_info">
+				<h2> Patient Details</h2>
+				<div id="5" class="patient_id"> Prateek Narang</div>
+				<div id="doctor_name">Dr Xyz Gupta </div>
+				<div id="date">March 30,2015</div>
+				<div id="time">11:45 a.m.</div>
+				<div id="1" class="bookApp_id"></div>
+			</div>
+
+			<div id="basic_diagnosis">
+				<h2> General Checkup </h2>
+				<div id="5" class="patient_id">BP 120-160  </div>
+				<div id="doctor_name">Temperature : 98.4 </div>
+				<div id="date"> Weight 65 Kg</div>
+				<div id="time">Height 5.4 </div>
+			</div>
+
+		</section>
+
+		<section id="main">
+			<nav >
+				<ul class="flex_container">
+					<li><a href="#disease">Disease</a></li>
+					<li><a href="#diagnose">Diagnose</a></li>
+					<li><a href="#tests">Tests</a></li>
+					<li><a href="#prescription">Prescription</a></li>
+					<li><a href="#followup">Follow Up</a></li>
+					<li><a href="#First Visit">First Visit</a></li>
+				</ul>
+
+			</nav>
+
+			<div class="flex_container">
+				<div id="patient_current_details">
+	
+				<div id="disease">
+					<h2>Disease</h2>
+					<form>
+						<input type="text" id="">
+					</form>
+				</div>
+
+				<div id="diagnosis">
+					<h2>Diagnosis</h2>
+					<form>
+						<input type="textarea" id="">
+					</form>
+				</div>
+
+				<div id="tests">
+					<h2>Tests</h2>
+					<form>
+						<input type="text" id="">
+					</form>
+				</div>
+
+				<div id="prescription">
+					<h2>Prescription</h2>
+					<form>
+						<div>Medicine Name</div>
+						<input type="text" id="p1">
+						<div>Dosage</div>
+						<input type="text" id="p1">
+						<div>Comments</div>
+						<input type="text" id="p1">
+						<br><br><br><br>
+						<div>Medicine Name</div>
+						<input type="text" id="p1">
+						<div>Dosage</div>
+						<input type="text" id="p1">
+						<div>Comments</div>
+						<input type="text" id="p1">
+						<br><br>
+					</form>
+					<button> Add More </button>
+				</div>
+
+				<div id="followup">
+					<h2>Follow Up</h2>
+					<form>
+						<input type="text" id=""> days.
+					</form>
+					<br><br>
+				</div>
+
+				<button id="submit_button" class ="btn">I am Done !</button>
+				</div>
+
+				<div id = "timeline">
+					<h2> Past Appointments </h2>
+					<ul class="cbp_tmtimeline">
+
+							<li><time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>27/03/2015</span> <span>Mon</span></time>
+							
+							<div class="cbp_tmicon cbp_tmicon-phone"></div>
+							<div class="cbp_tmlabel">
+								<h2>Date : 27th March 2015</h2>
+								<p>Disease,Diagnosis,Prescription</p>
+						
+							</div>
+						</li>
+						<li>
+							<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>27/03/2015</span> <span>Tue</span></time>
+							<div class="cbp_tmicon cbp_tmicon-screen"></div>
+							<div class="cbp_tmlabel">
+								<h2>Date : 27th March 2015</h2>
+								<p>Disease,Diagnosis,Prescription</p>
+						
+							</div>
+						</li>
+						<li>
+							<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>27/03/2015</span> <span>Wed</span></time>
+							<div class="cbp_tmicon cbp_tmicon-mail"></div>
+							<div class="cbp_tmlabel">
+								<h2>Date : 27th March 2015</h2>
+								<p>Disease,Diagnosis,Prescription</p>
+
+							</div>
+						</li>
+						<li>
+							<time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>27/03/2015</span> <span>Mon</span></time>
+							<div class="cbp_tmicon cbp_tmicon-phone"></div>
+							<div class="cbp_tmlabel">
+								<h2>Date : 27th March 2015</h2>
+								<p>Disease,Diagnosis,Prescription</p>
+
+							</div>
+						</li>
+						<li>
+							<time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>27/03/2015</span> <span>Tue</span></time>
+							<div class="cbp_tmicon cbp_tmicon-earth"></div>
+							<div class="cbp_tmlabel">
+								<h2>Date : 27th March 2015</h2>
+								<p>Disease,Diagnosis,Prescription</p>
+							</div>
+						</li>
+					</ul>	
+
+				</div>
+
+				
+			</div>
+
+		</section>
+
+
+
+	</body>
+</html>
