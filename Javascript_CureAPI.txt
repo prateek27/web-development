@@ -35,9 +35,30 @@ function fetchData(){
 
 
 //Other Properties of REQUEST Object.
-	Request State Codes - req.readyState
-	0) unsent
-	1) opened
-	2) headers_received
-	3) loading
-	4) done
+	
+	.readyState
+
+		Request State Codes - req.readyState
+		0) unsent
+		1) opened
+		2) headers_received
+		3) loading
+		4) done
+
+	.response
+
+
+	.responseText	
+
+	.responseType
+
+	.responseXML
+
+	.status
+			Status Codes : 200 for successful , Okay ! 
+	
+	.statusText
+
+	.timeout
+		0 means there is no timeout.
+

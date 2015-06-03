@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas Testing</title>
+		<style>
+		</style>
+	</head>
+	<body>
+		<canvas id="my-canvas" height="200px" width="200"px></canvas>
+		<canvas id="smile-canvas" height="200px" width="200"px></canvas>
+		<canvas id="image-canvas" height="200px" width="200"px></canvas>
+	</body>
+</html>
+
+<script>
+
+var canvas = document.getElementById('my-canvas');
+
+
+
+if(canvas.getContext){
+	var ctx= canvas.getContext('2d');
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(25,25,100,100);
+	ctx.clearRect(45,45,60,60);
+	ctx.strokeRect(50,50,50,50);
+}
+else{
+	alert("Your browser doesn't support Canvas.Please upgrade !")
+}
+
+var canvas2 =document.getElementById('smile-canvas');
+var ctx2 = canvas2.getContext('2d');
+ctx2.beginPath();
+ctx.fillStyle="#FF0000";
+ctx2.arc(75,75,50,0,Math.PI*2,true);
+ctx2.strokeStyle="#00FF00";
+
+
+			ctx.beginPath();
+               ctx.arc(75,75,50,0,Math.PI*2,true);  // Outer circle
+               ctx.moveTo(110,75);
+               ctx.arc(75,75,35,0,Math.PI,false);   // Mouth
+               ctx.moveTo(65,65);
+               ctx.arc(60,65,5,0,Math.PI*2,true);  // Left eye
+               ctx.moveTo(95,65);
+               ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
+               ctx.stroke();
+
+/*
+ ctx2.moveTo(30,96);
+       ctx2.lineTo(70,66);
+       ctx2.lineTo(103,76);
+       ctx2.lineTo(170,15);
+*/
+ctx2.stroke();
+
+
+var canvas3 = document.getElementById('image-canvas');
+var ctx3 = canvas.getContext('2d');
+
+/*
+
+   var img = new Image();
+    img.src = '/images/backdrop.jpg';
+
+    img.onload = function(){
+       ctx.drawImage(img,0,0);
+       ctx.beginPath();
+       ctx.moveTo(30,96);
+       ctx.lineTo(70,66);
+       ctx.lineTo(103,76);
+       ctx.lineTo(170,15);
+       ctx.stroke();
+   }
+
+
+*/
+/*
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var img=document.getElementById("lamp");
+var pat=ctx.createPattern(img,"repeat");
+ctx.rect(0,0,150,100);
+ctx.fillStyle=pat;
+ctx.fill();
+
+*/
+</script>

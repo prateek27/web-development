@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>Canvas Practice</title>
+	<style>
+		#mycanvas{
+			border: 5px solid blue;
+		}
+	</style>
+</head>
+	
+	<body>
+		<canvas id="mycanvas" height="500px" width="500px"></canvas>
+	</body>
+
+</html>
+
+<script>
+var canvas = document.getElementById('mycanvas');
+var ctx = canvas.getContext('2d');
+
+var img = new Image();
+img.src ="apple.jpg";
+
+img.onload = function(){
+ctx.drawImage(img,00,00);	
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(25,25,50,50);
+ctx.fillStyle='#00FF00';
+ctx.strokeRect(15,15,70,70);
+
+}
+
+
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(25,25,50,50);
+ctx.fillStyle='#00FF00';
+ctx.strokeRect(15,15,70,70);
+
+
+
+ctx.beginPath();
+ctx.arc(75,75,50,0,Math.PI*2,true);
+ctx.stroke();
+
+
+ctx.moveTo(0,0);
+ctx.lineTo(50,50);
+ctx.lineTo(70,50);
+ctx.lineTo(100,150);
+ctx.stroke();
+
+
+
+</script>
